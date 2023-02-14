@@ -10,6 +10,7 @@ urlpatterns = [
     #path('',views.home, name="home"),
     path('', views.home, name="home"),
     path('contratos', views.contratos, name="contratos"),
-    path('automovil', views.automovil, name="automoviles"),
+    path('automovil', views.automovil, name="automovil"),
     path('caracteristicas', views.caracteristicas, name="caracteristicas"),
+    path('contacto', views.contacto, name="contacto"),
 ]

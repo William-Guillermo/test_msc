@@ -22,4 +22,9 @@ def caracteristicas(request):
     #return HttpResponse("Caracterirsticas Automovil")
     return render(request, "garage/caracteristicas.html")
 
+def contacto(request):
+
+    #return HttpResponse("Caracterirsticas Automovil")
+    return render(request, "garage/contacto.html")
+
 
