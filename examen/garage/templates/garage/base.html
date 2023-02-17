@@ -34,19 +34,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item active px-lg-4">
+        <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item {% if request.path == '/contratos' %}active{% endif %} px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="{% url 'contratos' %}">contratos</a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item {% if request.path == '/automovil' %}active{% endif %} px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="{% url 'automovil' %}">automovil</a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item {% if request.path == '/caracteristicas' %}active{% endif %} px-lg-4 ">
           <a class="nav-link text-uppercase text-expanded" href="{% url 'caracteristicas' %}">caracteristicas</a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item {% if request.path == '/contacto' %}active{% endif %} px-lg-4 ">
           <a class="nav-link text-uppercase text-expanded" href="{% url 'contacto' %}">contacto</a>
         </li>
        
